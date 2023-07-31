@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import {Button, BtnWrapper} from "./FeedbackOptions.styled"
 
-const FeedbackOptions = ({options, onLeaveFeedback}) => {
+const FeedbackOptions = ({addFeedback, options}) => {
   return (
     <BtnWrapper>
       {options.map(option => {
@@ -10,7 +10,7 @@ const FeedbackOptions = ({options, onLeaveFeedback}) => {
           <Button
             key={option}
             type="button"
-            onClick={() => onLeaveFeedback(option)}
+            onClick={() => addFeedback(option)}
           >
             {option}
           </Button>
@@ -21,7 +21,7 @@ const FeedbackOptions = ({options, onLeaveFeedback}) => {
 }
 FeedbackOptions.propTypes = {
   options: PropTypes.arrayOf(PropTypes.string).isRequired,
-  onLeaveFeedback: PropTypes.func.isRequired
+  addFeedback: PropTypes.func.isRequired
 }
 
 export default FeedbackOptions
