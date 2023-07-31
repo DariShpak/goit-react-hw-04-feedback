@@ -4,7 +4,7 @@ export const SectionWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  text-align: start;
 `
 
 export const Title = styled.h2`

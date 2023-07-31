@@ -13,12 +13,13 @@ export const StatsList = styled.ul`
   padding-left: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  min-width: 200px;
+  gap: 12px;
 `
-export const Item = styled.li`
-  font-size: 16px;
-  font-weight: 500;
-  border-bottom: 1px solid #51748f;
-`
+export const Item = styled.li``
 
+export const P = styled.p`
+  font-size: 16px;
+  margin: 0;
+`
 export const Notification = styled.span``
